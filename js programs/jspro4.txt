@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Program 4</title>
+<script>
+    function check(){
+        var a= document.getElementById("date1").value;
+        var b= document.getElementById("date2").value;
+        var c= new Date(a);
+        var d= new Date(b);
+        var timed= d.getTime() - c.getTime();
+
+        var result = timed/(1000 * 60 * 60 * 24);
+        return document.getElementById("res").innerHTML= result + "days are left for next diwali.";
+    }
+</script>
+</head>
+<body>
+    <h2>	 Calculate days left until next Diwali.</h2>
+    Enter the Today's date: <br>
+    <input type="date" name="" id="date1"> <br><br>
+    Enter the Diwali date: <br>
+    <input type="date" name="" id="date2"> <br><br>
+    <input type="button" value="Check the days" onclick="check()"> <br> <br>
+    <div id="res"></div>
+</body>
+</html>

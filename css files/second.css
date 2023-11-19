@@ -1,0 +1,48 @@
+header{
+    
+    background-color: pink;
+
+}
+h1{
+    font-size: 90px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline;
+    color: rgb(96, 201, 243);
+    padding: 0px;
+    
+    
+}
+img{
+    border-image: round;
+    width: 50px;
+    height: 70px;
+    display:inline;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+nav{
+    overflow:hidden;
+    background: cyan;
+}
+a{
+    float: left;
+    color: darkblue;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a:hover{
+    color: fuchsia;
+    background: indigo;
+}

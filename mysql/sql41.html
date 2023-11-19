@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        h4{
+            font-size: 25px;
+        }
+        ul li{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 25px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+    <h3>CHARACTER FUNCTIONS </h3>
+<p>
+  Character or text Functions are used to manipulate text strings. They accept string or character data as input and can 
+  return both character and numeric values. Character Functions can be divided into the following: <br>
+  1.Case-manipulation Functions <br>
+  2.Character-manipulation Functions <br> </p>
+<h3>Case-manipulation Functions</h3>
+<p>These Functions convert case for character strings. Following are the three Case-manipulation funtions: </p> 
+<h4>(i)LOWER(string)</h4>
+<P>This function converts mixed case or uppercase character strings to lowercase.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT LOWER(string) from dual ;</p>
+
+<br>
+<h4>(ii)UPPER(string)</h4>
+<P>This function converts mixed case or lowercase character strings to uppercase.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT UPPER(string) from dual ;</p>
+
+<br>
+<h4>(iii)INITCAP(string)</h4>
+<P>This function converts the first letter of each word to uppercase and remaining letters to lowercase.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT INITCAP(string) from dual ;</p>
+<h4>Example: </h4>
+<img src="../mysqlimages/my41a.png">
+<br>
+<h3>Character-manipulation Functions</h3>
+<p>These Functions manipulate character strings. Following are the three Case-manipulation funtions: </p> 
+<h4>(i)CONCAT(string)</h4>
+<P>This function joins two string values together. This function is similar to || Operator.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT CONCAT('string1', 'string2') from dual ;</p>
+
+<br>
+<h4>(ii)LENGTH(string)</h4>
+<P>This function returns the length of a string as a numeric value.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT LENGTH(string) from dual ;</p>
+
+<br>
+<h4>(iii)ASCII(string)</h4>
+<P>This function  returns the decimal representation of the first character of the string.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT ASCII(string) from dual ;</p>
+
+<br>
+<h4>(iv) REPLACE(string, serch_str, replace_str)</h4>
+<P>This function returns string with every occurence of search_str replaced with replace_str.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT REPLACE(string, serch_str, replace_str) from dual ;</p>
+<h4>Example: </h4>
+<img src="../mysqlimages/my41b.png">
+<br><br>
+<br><br>
+<br>
+ 
+
+
+       
+</body>
+</html>

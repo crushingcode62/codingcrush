@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>Foreign Key</h3>
+<p>
+  <b>Foreign key:</b>The foreign key is known as Refrential intigrity constraints. It maintance the integrity of the 
+  data by checking the refrence of the data from the primary key data. It establishes a relationship between two tables
+  . For a column to be defined as foreign key, it should be a defined as a primary key in the table which it is referring. One
+  or more columns can be defined as foreign key. Foreign key constraints can be defined at the column- level or table- level. <br>
+  the table on which we have a primary key is known as parent table,master table, primary table. <br>
+  The table on which we have a foreign key is known as child table, slave table, secondary table. <br>
+  It in the master table we are having two columns on which primary key is applied there in the slave table their should be two 
+  columns which are refrences to the master table column. <br>
+  A table can have multiple foreign keys.
+  The columns of the master table and the slave table datatype should be same(column name can be different ).
+</p>    
+<h3>Syntax(Foreign key at column-level):</h3>
+<p class="back"> create table table_name  
+   <br>( column_name1 datatype FOREIGN KEY REFERENCES table2(column1) , column_name2 datatype,.....);   
+   </p>
+   <br>
+<h3>Syntax(Foreign key at table-level):</h3>
+<p class="back"> create table table_name  
+   <br>(column_name1 datatype , column_name2 datatype,.....,FOREIGN KEY(column_name1) REFERENCES table2(column1));  
+   </p>
+
+<h3>Example:Create a table1 with primary key and also create a table2 which is references by table 1.</h3>
+<p>The selected area show if we can enter another data which is not exists in the parent table the error will be show.</p>
+<img src="../mysqlimages/my23.png" >
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

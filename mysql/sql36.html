@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>SUBQUERY</h3>
+<p> <b>Subquery/Nested query:</b>
+    Nested query is a query within another query. SQL has an ability to nest queries within one another.A subquery 
+    in MySQL is a query, which is nested into another SQL query and embedded with SELECT, INSERT, UPDATE or DELETE 
+    statement along with the various operators. We can also nest the subquery with another subquery. A subquery is 
+    known as the inner query, and the query that contains subquery is known as the outer query.
+    <br> The inner query executed first gives the result to the outer query, and then the main/outer query will be performed. MySQL allows us to use
+      subquery anywhere, but it must be closed within parenthesis. All subquery forms and operations supported by the SQL standard will be supported in MySQL also.
+</p>
+<p> The following are the rules to use subqueries:</p>
+<ul>
+<li> Subqueries should always use in parentheses.</li>
+ <li> If the main query does not have multiple columns for subquery, then a subquery can have only one column in the SELECT command.</li>
+<li> We can use various comparison operators with the subquery, such as >, <, =, IN, ANY, SOME, and ALL. A multiple-row operator is very useful when the subquery returns more than one row. </li>
+<li> We cannot use the ORDER BY clause in a subquery, although it can be used inside the main query. I</li>
+<li> If we use a subquery in a set function, it cannot be immediately enclosed in a set function. </li>
+<br>
+<h3>Syntax:</h3>
+<p class="back"> SELECT column_list (s) FROM  table_name  
+    WHERE  column_name OPERATOR  
+       (SELECT column_list (s)  FROM table_name [WHERE])  </p>
+   <br>
+
+<h3>Example: </h3>
+<img src="../mysqlimages/my37.png" >
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

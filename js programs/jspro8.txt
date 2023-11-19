@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Program 8</title>
+    <script>
+        function monname(){
+            var x= parseInt(document.getElementById("num").value);
+            switch(x){
+                case 1: document.getElementById("res").innerText=" January and 31 days.";
+                break;
+                case 2: document.getElementById("res").innerText=" February and 28 days.";
+                break;
+                case 3: document.getElementById("res").innerText=" March and 31 days.";
+                break;
+                case 4: document.getElementById("res").innerText=" April and 30 days.";
+                break;
+                case 5: document.getElementById("res").innerText=" May and 31 days.";
+                break;
+                case 6: document.getElementById("res").innerText=" June and 30 days.";
+                break;
+                case 7: document.getElementById("res").innerText=" July and 31 days.";
+                break;
+                case 8: document.getElementById("res").innerText=" August and 31 days.";
+                break;
+                case 9: document.getElementById("res").innerText=" September and 30 days.";
+                break;
+                case 10: document.getElementById("res").innerText=" October and 31 days.";
+                break;
+                case 11: document.getElementById("res").innerText=" November and 30 days.";
+                break;
+                case 12: document.getElementById("res").innerText=" December and 31 days.";
+                break;
+                default: alert("Please enter a number between 1 to 12.");
+                break;
+            }
+        }
+       
+    </script>
+</head>
+<body>
+    <h2>Enter the month number and display respective month name and days.</h2>
+    Enter the Month Number :
+    <input type="text" name="" id="num"> <br><br>
+    <input type="button" value="Submit" onclick="monname()">
+    <br><br>
+    <div id="res"></div>
+</body>
+</html>

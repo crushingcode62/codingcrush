@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>Constants</h3>
+<p>  
+    As the name implies a constant is a value used in a PL/SQL block that remains unchanged throughout the program. 
+    A constant is a user-defined literal value. You can declare a constant and use it instead of actual value.
+    For example: If you want to write a program which will increase the salary of the employees by 25%, you can 
+    declare a constant and use it throughout the program. Next time when you want to increase the salary again you
+     can change the value of the constant which will be easier than changing the actual value throughout the program.
+    <br>   
+    <br>
+    The General Syntax to declare a constant is: <br>
+    constant_name CONSTANT datatype:= VALUE;
+    <br>
+    In the syntax: constant_name is the name of the constant i.e. similar to a variable name.
+The word CONSTANT is a reserved word and ensures that the value does not change.
+VALUE - It is a value which must be assigned to a constant when it is declared. You cannot assign a value later.</p>
+<br>
+<h3>Variables : </h3>
+   <p>Variables are placeholders (storage are(a) used to hold the data values that can change through the PL/SQL Block. Each variable in PL/SQL has a specific data type, who
+     determines the size and layout of the variable's memory; the range of values that can be stored within that memory and the set of
+      operations that can be applied to the variable.</p>
+<p>variables can be used for the following :
+<br>    
+    Temporary storage of data: Data can be temporarily stored in one or more variables for use when
+     validating data input and for processing later in the data flow process <br>
+     Manipulation of stored values: Variables can be used for calculations and other data . manipulations without accessing the database  <br>
+    Reusability: After variables are declared, they can be used repeatedly in an application simply by referencing them in other
+     statements, including other declarative statements. 
+     <br>
+    The name of a PL/SQL variable consists of a letter optionally followed by more letters, merals dollar signs, underscores, and number signs and should not exceed 30 characters default, variable names are not case-sensitive You cannot use a PL/SQL keyword as a variable name
+    
+    <b> Variable Declaration in PL/SQL </b>
+    
+    PL/SQL variables must be declared in the declaration section of PL/SQL block. When you declare a variable, PL/SQL allocates memory for the variable's value and the storage location is identified by the variable name.
+    <br> 
+    <br>
+    The General Syntax to declare a variable is: 
+    <br> variable name datatype [NOT NULL: = value];
+    <br>
+    In the syntax:
+    variable_name is the name of the variable datatype is a valid PL/SQL datatype . NOT NULL is an optional specification on the variable
+    . value or DEFAULT value is also an optional specification, where you can initialize a variable. <br>
+    Each variable declaration is a separate statement and must be terminated by a semicolon.</p>
+    <h3>Example :Print the value of constant and variable.</h3>
+    <img src="../../mysqlimages/pl3.png" height="600" width="800" border="2">
+    
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

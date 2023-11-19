@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <form method="post">
+            <center>
+                <h1> 
+                    <u>POWER OF A NUMBER</u></h1>
+            </center><br>
+            <table bgcolor="crimson" align="center"><tr><td><br>
+            <input type="text" value="Enter the Number:" readonly><input type="number" name="n"></tr></td><br><br><tr><td><br>
+            <input type="text" value="Enter Power of a number:" readonly><input type="number" name="n1"></tr></td><tr><td><br><br><center><br><br>
+            <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td></table>
+        </form>
+
+        <?php
+            if($_POST)
+            {
+                $num=$_POST['n'];
+                $pow=$_POST['n1'];
+                $res=1;
+                $p=$pow;
+                while($pow>=1)
+                {
+                    $res= $res*$num;
+                    $pow--;
+                }
+               echo "<center>$num raise the power $p = $res</center>";   
+            }
+        
+        ?>
+    </body>
+</html>

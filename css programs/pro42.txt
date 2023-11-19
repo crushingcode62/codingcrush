@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Program 42</title>
+        <style>
+            img{
+                width: 500px;
+                height: 500px;
+                filter: grayscale(100%);            
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../images/bg2.jpg">
+    </body>
+</html>

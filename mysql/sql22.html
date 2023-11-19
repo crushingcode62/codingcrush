@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>Primary Key</h3>
+<p>
+  <b>Primary key:</b> A primary key Constraint creates a primary key for the table. Only one primary
+  key can be created for each table. The primary key constraint is a column or set of columnsthat uniquely identifies 
+  each row in the table. This constraint enforces uniqueness of the column or column combination and ensures that no colun that is part of the primary 
+  key can contain a NULL value. Primary key constraints can be defined at the column levelor table level. 
+</p>    
+<h3>Syntax(Primary key at column-level):</h3>
+<p class="back"> create table table_name  
+   <br>( column_name1 datatype PRIMARY KEY , column_name2 datatype,.....);   
+   </p>
+   <br>
+   <h3>Example: </h3>
+<img src="../mysqlimages/my22a.png">
+<br>
+<h3>Syntax(Primary key at table-level):</h3>
+<p class="back"> create table table_name  
+   <br>(column_name1 datatype , column_name2 datatype,....., PRIMARY KEY(column_name1,column_name2));  
+   </p>
+<br>
+<h3>Example:Create a table which have id is a primary key. </h3>
+<img src="../mysqlimages/my22b.png">
+<br><br>
+<br><br>
+<br>
+
+
+       
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program 51</title>
+    <style>
+     h1{
+            text-align: center;
+            padding-top: 50px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    body{
+            margin:2% 10%;
+        }
+    .cards .card{
+            width:30%;
+            padding:15px  15px;
+            float: left;
+  
+        }
+    .d1{
+            font-size: 25px;
+            margin: 10px;
+            text-align: center;
+        }
+    .card img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Courses</h1>
+    <br>
+    <div class="cards">
+        <div class="card">
+            <img src="../images/bg1.jpg">
+            <div class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex sint excepturi voluptates qui omnis? </div>
+            </div>
+        <div class="card">
+            <img src="../images/bg1.jpg">
+            <div class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex sint excepturi voluptates qui omnis? </div>
+        </div>
+        <div class="card">
+            <img src="../images/bg1.jpg">
+            <div class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex sint excepturi voluptates qui omnis? </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

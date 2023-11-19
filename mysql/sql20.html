@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        a.ab{
+            color: aqua;
+            text-overflow: clip;
+            text-shadow: 10pc;
+            font-size: 40px;
+            background-color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 2px solid midnightblue;
+            text-decoration: none;
+            align-content: space-around;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2> 
+    
+   <h3>Logical Operator</h3>
+   <p><b>LOGICAL OPERATOR:</b>There are three logical operators namely, AND, OR and NOT. These operators compare two or more than 
+    two conditons at a time to detemine whether a row can be selected for the output.</p>
+    <center>
+        <table  border="1">
+        <tr><th><font size=6>OPERATORS </font></th>
+        <th ><font size=6> DESCRIPTION </font></th>
+        <th><font size=6>EXAMPLE</font></th></tr>
+        <tr> 
+        <td><font size=5>OR</font></td>
+        <td> <font size=5>For the row to be selected at least one of the conditions must be true.</font></td>
+        <td><font size=5 >select name from student where rollno< 10 OR rollno>20;</font></td>
+        </tr>
+        <tr>
+        <td><font size=5>AND </font></td>
+        <td><font size=5>For the row to be selected all the specific conditions must be true.</font></td>
+        <td><font size=5 >select name from student where rollno< 10 AND gender="M";</font></td>  
+        </tr>
+        <tr>
+        <td><font size=5>NOT</font></td>
+        <td><font size=5>For the row to be selected the specific condition must be false.</font></td>
+        <td><font size=5 >select name from student where gender<> "F";</font></td>
+        </tr>
+        </table>
+        </center>
+    </table>
+    <br><br>
+<h3>Example of OR Operator: Show name of the employees whose belong to department no. 101  or 103. </h3>
+<img src="../mysqlimages/my20a.png" >
+<br>
+<h3>Example of AND Operator: Show name, id, gender of the employees whose only male employees and belong to department ni. 101 </h3>
+<img src="../mysqlimages/my20b.png">
+<br>
+<h3>Example of NOT Operator:Show id, name, gender of the employees whose not belongs to department no. 103 </h3>
+<img src="../mysqlimages/my20c.png" >
+
+<br><br>
+<br><br>
+<br>
+ 
+
+       
+</body>
+</html>

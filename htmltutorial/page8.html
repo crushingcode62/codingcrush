@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLES</title>
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        .front, table{
+            background-color: black;
+            color: white;
+            font-size: 30px;
+        }
+        .h2{
+            background-color: black;
+            color: rgb(126, 255, 242);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        .h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        dl {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 class="h2">WELCOME TO CODING CRUSH</h2>
+    <h3 class="h3">HTML TABLE</h3>
+<p>
+ HTML table tag is used to display data in tabular form (row * column). 
+ There can be many columns in a row.We can create a table to display data in tabular 
+ form, using < table> element, with the help of < tr> , < td>, and < th> elements.
+Each table, table row is defined by < tr> tag, table header is defined by < th>,
+ and table data is defined by < td> tags.
+</p>
+<p>
+< table>	It defines a table. <br>
+< tr>	 It defines a row in a table. <br>
+< th>	It defines a header cell in a table. <br>
+< td>	It defines a cell in a table. <br>
+< caption>	 It defines the table caption. <br>
+< tbody>	It is used to group the body content in a table. <br>
+< thead>	It is used to group the header content in a table. <br>
+< tfooter>	It is used to group the footer content in a table. </p>
+<h3 class="h3">Example: </h3>
+<p class="back">
+    < table border="1">  
+        < tr> <br>
+        < th>First_Name< /th> <br>
+        < th>Last_Name< /th> <br>
+        < th>Marks< /th> <br>
+        < /tr>  <br>
+        < tr> <br>
+        < td>Sonu< /td> <br>
+        < td>Jai< /td> <br>
+        < td>60< /td> <br>
+        < /tr> <br> 
+        < tr> <br>
+        < td>Ram < /td> <br>
+        < td>kumar< /td> <br>
+        < td>80< /td> <br>
+        < /tr>  <br>
+        < tr> <br> 
+        < td>Swati< /td> <br>
+        < td>Sharma< /td> <br>
+        < td>82< /td> <br>
+        < /tr>    <br>
+        < /table>  </p>
+<p class="front">Output: <br>
+    <table border="1">  
+        <tr><th>First_Name</th><th>Last_Name</th><th>Marks</th></tr>  
+        <tr><td>Sonu</td><td>Jain</td><td>60</td></tr>  
+        <tr><td>Ram</td><td>kumar</td><td>80</td></tr>  
+        <tr><td>Swati</td><td>Sharma</td><td>82</td></tr>  
+        </table>          
+</p>
+<h3 class="h3">Attributes of HTML Table :</h3><p>
+1. Table width <br>
+2. Table rowspan <br>
+3. Table colspan <br>
+4. Table border <br>
+5. Table caption 
+</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<body>
+    <h2>Check for vowel characters, spaces and consonants using switch statement.</h2>
+    <input type="text" name="" id="letter"><br><br>
+    <input type="button" value="Check" onclick="vowel();"><br><br>
+   <div id="res"></div>
+</body>
+<head>
+    <title>Program 9</title>
+    <script>
+        function vowel(){
+        var ch;
+        ch= document.getElementById("letter").value;
+        switch(ch)
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+            document.getElementById("res").innerText="This is a vowel character.";
+            break;
+            case ' ':
+            document.getElementById("res").innerText="This is a space.";  
+            break;
+            default:    document.getElementById("res").innerText="This is a consonant.";  
+        }
+    }
+    </script>
+</head>
+</html>

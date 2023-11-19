@@ -1,0 +1,88 @@
+body{
+    background-color:black;
+}
+*{
+  
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body
+{
+justify-content: center;
+align-items: center; 
+display:flex;
+margin:10px;
+}
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1200px;
+    flex-wrap: wrap;
+    
+}
+.container h2{
+   color:rgb(119, 251, 238);
+   background-color: black;
+   font-size: 65px;
+   display:block;
+   padding-left: 19%;
+   text-align:center;
+   margin:20px;
+   text-shadow: turquoise;
+}
+.container .card{
+    position: relative;
+    width: 350px;
+    padding: 10px;
+    margin:25px;
+    background:rgb(105, 236, 223);
+    box-shadow: 10px 10px 10px 5px grey; 
+}
+.container .card .imag{
+    margin-bottom: 10px;
+
+}
+.container .card .imag img{
+    max-width: 300px;
+    height: 250px;
+  
+}
+.container .card .content{
+    position: relative;
+    height: 290px;
+    overflow: hidden;
+}
+.container .card .content h3{
+    color:black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container .card .content p{
+    font-weight: 100;
+    font-size: 25px;
+    color:black;
+    margin-bottom: 15px;
+}
+.container .card .content a{
+    padding:3px;
+    color:black;
+    background-color:turquoise;
+    margin-left: 29px;
+    margin-top: 5px;
+    border-radius:15px;
+    text-align: center;
+    border: 2px solid ;
+    text-decoration: none;
+    font-size: 30px;
+ 
+}
+
+.container .card .content a:hover{
+    color:rgb(19, 165, 150);
+    background-color:white;
+}

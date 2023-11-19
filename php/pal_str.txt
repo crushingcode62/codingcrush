@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <form method="post">
+            <center>
+               <h1> 
+                    <u>STRING PALINDROME</u></h1>
+            </center><br>
+            <table bgcolor="crimson" align="center"><tr><td><br>
+            <input type="text" value="Enter the String" readonly><input type="text" name="n"></tr></td><tr><td><br><br><center><br><br>
+            <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td></table>
+        </form>
+
+        <?php
+            if($_POST)
+            {
+                $str=$_POST['n'];   
+                $rev=strrev($str);
+                echo "<center>";
+                if($str==$rev)
+                {
+                    echo "<h3> The $str is a Palindrome</h3>";
+                }
+                else 
+                {
+                    echo "<h3> The $str is not a Palindrome</h3>";
+                }
+                echo "</center>";
+            }
+        
+        ?>
+    </body>
+</html>

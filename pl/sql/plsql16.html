@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>PACKAGE</h3>
+<p>
+ Package is a collection of procedure and function. Package is a database object. 
+ <br> A package is a database object that groups 
+ logically related pl/sql objects, such as procedures, functions, variables, cursors and type declarations into a single unit.
+ There is considerable performance improvement because of this encapsulation. The entire package is loaded into  the memory 
+ when a procedure or a function, within the package, is called for the first time.This reduces the unnecessary disk I/O and 
+ network traffic. <br>
+ To create a package we create two things:
+ <br>1.Package Specification
+ <br>2.Package Body
+
+ <br>
+ <center><img src="../../mysqlimages/pl16.png" height="500" width="800"></center>
+</p>
+<h3>Package Specification</h3>
+<p>We declare the named procedure and named functions. The package Specification is required when you create a new package.
+    It declares the types, variables, Constants, exceptions, cursors and subprograms. The scope of these declarations is local to your database 
+    schema and global to the package.
+</p>
+<h3>Syntax:</h3>
+<p class="back">CREATE [OR REPLACE ] PACKAGE package_name IS|AS 
+    <br>named_procedure;
+    <br>named_function;
+    <br>END [package_name]; 
+   </p>
+   <br>
+<h3>Package Body</h3>
+<p>A package body contains the code that implements the package Specification. It fully defines cursors,procedures, Functions 
+    declared in the package Specification.
+</p>
+<h3>Syntax:</h3>
+<p class="back">CREATE [OR REPLACE ] PACKAGE BODY package_name IS|AS 
+    <br>named_procedure definition;
+    <br>named_function definition;
+    <br> [BEGIN 
+    <br> executable_statements;]
+    <br>END [package_name]; 
+   </p>
+   <h3>Dropping a Package</h3>
+   <p>To drop a package, DROP PACKAGE statement is used. This statement drops the body and Specification of a package.
+  </p>
+  <h3>Syntax:</h3>
+<p class="back"> DROP PACKAGE package_name; 
+   </p>
+   <h3>Example: </h3>
+   <img src="../../mysqlimages/pl16a.png" height="600" width="800" border="2">
+   <img src="../../mysqlimages/pl16b.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ol li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>PL/SQL BLOCK STRUCTURE </h3>
+<p>
+PL/SQL is a block-structured language. This means that programs can be divided into logical blocks.
+A PL/SQL block consists of up to three sections:
+<ol>
+    <li>Declaretion</li>
+    <li>Executeble</li>
+    <li>Exception handling</li>
+</ol>
+<p><b>1. Declaration :</b>The declaration section of a PL/SQL block start with the keyword DECLARE. This section is used to declare any
+placeholders like variables, constants, records and cursors, which are used to manipulate data in the executable section. <br></p>
+<p><b> 2. Executable:</b> The executable section of a PL/SQL block starts with the keyword BEGIN and ends with END. This is the section 
+where the program logic is written to perform any task. The programmatic constructs like loops, conditional statement and SQL statements
+ from the part of execution section. <br> </p>
+ <p><b>3. Exception Handling: </b>The Exception section of a PL/QL block starts with the keyword EXCEPTION. Any error in the program can be 
+ handled in this block, so that the PL/SQL block terminates gracefully. If the PL/SQL block contains exceptions that cannot be
+  handled, the block terminates immediately with errors. <br></p>
+</p>
+
+<br>
+<h3>The structure of PL/SQL block:</h3>
+<p class="back"> DECLARE <BR>
+    < declarations> <br>
+    BEGIN  <br>
+    < executable statement> <br>
+    EXCEPTION <br>
+    < exception handlers> <br>
+    END; 
+    <br>
+
+   </p>
+   <br>
+
+<h3>Structure</h3>
+<center>
+<img src="../../mysqlimages/PL.png" height="400" width="400"></center>
+<br>
+<h3>Example: Simple PL/SQL program.</h3>
+<img src="../../mysqlimages/pl1.png" height="600" width="800" border="2">
+
+  
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

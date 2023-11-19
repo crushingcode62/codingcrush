@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>USER DEFINED EXCEPTIONS</h3>
+<p>
+    PL/SQL allows you to define your own exceptions according to the need of your program. A user-defined exception
+     must be declared and then raised explicitly, using either a RAISE statement or the procedure DBMS_STANDARD.RAISE_APPLICATION_ERROR.
+</p>
+<p>Steps to be followed to use User defined Exceptions:</p>
+<ul>
+    <li>They should be explicity declard in the declaration section. (Declaring an Exception)</li>
+    <li>They should be explicitly raised in the Execution section. (Raising an Execution)</li>
+    <li>They should be handled by referencing the user-defined exception name in the exception section. (Handling an Exception)</li>
+</ul>
+<h3>Syntax:</h3>
+<p class="back">DECLARE
+    <br>user_exception EXCEPTION;
+    <br> BEGIN
+    <br> statement(s);
+    <br> IF condition THEN
+     <br>   RAISE user_exception;
+    <br> END IF;
+    <br> EXCEPTION
+    <br> WHEN user_exception THEN
+     <br>   User defined statement (action) will be taken;  
+    <br> END;
+   </p>
+   <br>
+
+<h3>The following example explain the usage of User- defined exceptions. </h3>
+<img src="../../mysqlimages/pl20a.png" height="600" width="800" border="2">
+<img src="../../mysqlimages/pl20b.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+      
+</body>
+</html>

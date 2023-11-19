@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>LOOP CONTROL</h3>
+<p>
+   Iterative control statements or loop control structures are used when we want to repeat the execution of one or more statements for 
+   specified number of times. PL/SQL provides the following types of loops:
+   <ul>
+   <li> Basic loop/ Simple Loop</li>
+   <li> While Loop</li>
+   <li> For Loop</li>
+   </ul>
+</p>
+<br>
+<h3>SIMPLE LOOP </h3>
+<p>The simplest form of loop statement is the simple loop, which encloses a sequence of statements between the keywords LOOP and END LOOP.
+    Each time the flow of execution reaches the END LOOP statement, control is returned to the corresponding Loop statement above it.
+    A basic loop allows execution of its statement at least once, even if the condition is already met upon entering the loop. Without
+    the EXIT  statement, the loop would be infinite or endless.
+    <br>
+    Exit : The exit is use to terminate a loop.Control passes to the next statement after the END LOOP statement.
+</p>
+<h3>Syntax:</h3>
+<p class="back">LOOP 
+    <br>statements ;
+    <br> EXIT[ when condition];
+    <br>END LOOP;
+   </p>
+   <br>
+   
+   <h3>Example: Print the number between 1 to 10 using SIMPLE LOOP. </h3>
+   <img src="../../mysqlimages/pl7a.png" height="600" width="800" border="2">
+   <br>
+   <h3>WHILE LOOP </h3>
+<p>The WHILE LOOP is used to repeat a sequance of statements until the controlling condition is true. The condition is evaluated 
+    at the start of the each iteration. The loop terminates when the condition is false. If the condition is false at the start of the 
+    loop, then no further iterations are performed. If the variables involved in the conditions do not change during the body 
+    of the loop, then the condition remains true and the loop does not terminate.
+    <br></p>
+<h3>Syntax:</h3>
+<p class="back">WHILE condition LOOP  
+    <br>statement1;
+    <br>statement2;
+    <br>END LOOP;
+   </p>
+   <br>
+
+   <h3>Example: Find the factorial of a number using WHILE LOOP.  </h3>
+   <img src="../../mysqlimages/pl7b.png" height="600" width="800" border="2">
+<br>
+<h3>FOR LOOP </h3>
+<p> 
+    For loop have the same general structure as the basic loop. In addition, they have a control statement before the loop keyword 
+    to determine the number of iterations that PL/SQL performs.
+<br>
+</p>
+<h3>Syntax:</h3>
+<p class="back">FOR counter IN [reverse] 
+    <br> < lower_bound>.. < upper_bound> LOOP
+    <br>statement1 ;
+    <br>statement2 ;
+    <br>END LOOP;
+   </p>
+   <br>
+ 
+   <h3>Example: Print the value of k from 1 to 10 in reverse order using FOR LOOP. </h3>
+   <img src="../../mysqlimages/pl7c.png" height="600" width="800" border="2">
+   <br>
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

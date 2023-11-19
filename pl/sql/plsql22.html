@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>TYPES OF TRIGGERS</h3>
+<p>
+   <B> Categorization on the trigger level.</B> <br>
+   1. ROW Level trigge <br>
+   2. STATEMENT Level trigger
+<br>
+<br>
+   <b> Categorization of the trigger timing </b>
+   <br>  
+    1. BEFORE trigger
+    2. AFTER trigger
+</p>
+<h3>VARIABLES OF TRIGGERS</h3>
+<p>:NEW - It holds a new value for the columns of the base table/view during the trigger execution <br>
+    :OLD - It holds old value of the columns of the base table/view during the trigger execution</p>
+<h3>TRIGGER LEVEL</h3>
+<H3>1. ROW LEVEL TRIGGER</H3>
+<P>A row-level trigger is fired each time the table is affected by the triggering statement, i.e. it is fired once for each row 
+    that is affected by the triggering statement. <br>
+    Row-level triggers are useful if the code in the trigger action depends on data provided by the triggering statement or rows 
+    that are affected. Row level triggers are implemented by using the option FOR EACH ROW in CREATE TRIGGER statement.
+</P>
+<h3>Syntax for a ROW-LEVEL TRIGGER :</h3>
+<p class="back">CREATE [OR REPLACE] TRIGGER trigger_name 
+    <br>BEFORE | AFTER
+    <br>INSERT [OR]| UPDATE [OR]| DELETE [of column_name] 
+    <br>ON table_name 
+    <br>FOR EACH ROW [when condition]
+    <br> BEGIN 
+    <br>pl/sql block;
+    <br>END trigger_name;
+   </p>
+   <h3>example:</h3>
+   <img src="../../mysqlimages/pl22c.png" height="600" width="800" border="2">
+
+   
+<H3>2. STATEMENT LEVEL TRIGGER</H3>
+<P>A statement-level trigger is fired once on behalf of the triggering statement, regardless of the number of rows in the table 
+    that the triggering statement affects.
+</P>
+<h3>Syntax for a STATEMENT-LEVEL TRIGGER :</h3>
+<p class="back">CREATE [OR REPLACE] TRIGGER trigger_name 
+    <br>BEFORE | AFTER
+    <br>INSERT [OR]| UPDATE [OR]| DELETE [of column_name] 
+    <br>ON table_name 
+    <br> BEGIN 
+    <br>pl/sql block;
+    <br>END trigger_name;
+   </p>
+   <h3>example:</h3>
+   <img src="../../mysqlimages/pl22a.png" height="600" width="800" border="2">
+   <img src="../../mysqlimages/pl22b.png" height="600" width="800" border="2">
+
+   <H3>TRIGGER TIMING</H3>
+   <H3>1.BEFORE TRIGGER</H3>
+   <P>When defining a trigger, you can specify the trigger timming. That is, you can spacify whether the trigger action is to be executed before 
+    or after the triggering statement. Before and after apply to both statement and row level. <br>
+    BEFORE triggers are commonly used to check the validity of the data before the action is performed. For instance, you can use BEFORE trigger 
+    to prevent deletion of row if deletion should not be allowed in the given case.
+   </P>
+   <h3>Syntax for a BEFORE TRIGGER :</h3>
+<p class="back">CREATE [OR REPLACE] TRIGGER trigger_name 
+    <br>BEFORE 
+    <br>INSERT [OR]| UPDATE [OR]| DELETE [of column_name] 
+    <br>ON table_name 
+    <br>FOR EACH ROW [when condition]
+    <br> BEGIN 
+    <br>pl/sql block;
+    <br>END trigger_name;
+   </p>
+   <h3>example:</h3>
+   <img src="../../mysqlimages/pl22d.png" height="600" width="800" border="2">
+   <img src="../../mysqlimages/pl22e.png" height="600" width="800" border="2">
+
+
+   <H3>2. AFTER TRIGGER</H3>
+<P>AFTER triggers are fired after the triggering action is completed. For example, if after trigger is associated  with insert 
+    command then it is fired after the row is inserted into the table.
+</P>
+<h3>Syntax for AFTER TRIGGER :</h3>
+<p class="back">CREATE [OR REPLACE] TRIGGER trigger_name 
+    <br>AFTER
+    <br>INSERT [OR]| UPDATE [OR]| DELETE [of column_name] 
+    <br>ON table_name 
+    <br>FOR EACH ROW [when condition]
+    <br> BEGIN 
+    <br>pl/sql block;
+    <br>END trigger_name;
+   </p>
+   <h3>example:</h3>
+   <img src="../../mysqlimages/pl22f.png" height="600" width="800" border="2">
+
+   <h3>DROPPING A TRIGGER</h3>
+   <p><b>Syntax: </b></p>
+   <P class="back"> DROP TRIGGER trigger_name;</P>
+
+<br><br>
+<br><br>
+<br>
+      
+</body>
+</html>

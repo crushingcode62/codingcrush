@@ -1,0 +1,30 @@
+
+<html>
+    <body>
+            <center>
+                <h2> 
+                    <u>LIST OF ODD AND EVEN NUMBERS UPTO 50</u></h2>
+            </center><br>
+            <?php
+               echo "List of Even numbers upto 50: <br>";
+
+               for($i=1; $i<=50; $i++)
+               {
+                    if($i%2 ==0)
+                    {
+                        echo $i."<br>";
+                    }
+               }
+ 
+               echo "List of Odd numbers upto 50:<br>";
+               for($i=2; $i<=50; $i++)
+               {
+                if($i%2!=0)
+                {
+                    echo $i."<br>";
+                }
+               }
+
+            ?>
+    </body>
+<html>

@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1><center><u>First 10 Prime numbers</u> </center></h1>
+        <?php
+            $count=0;
+            $num=2;
+            while($count<10)
+            {
+                $d_count=0;
+                for($i=1;$i<=$num;$i++)
+                {
+                    if(($num%$i)==0)
+                    {
+                        $d_count++;
+                    }
+                }
+
+               if($d_count<3)
+               {
+                    echo $num,"<br>";
+                    $count=$count+1;
+               }          
+               $num=$num+1;
+            }
+        ?>
+    </body>
+</html>

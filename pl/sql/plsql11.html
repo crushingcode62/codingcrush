@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ol li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+summary{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>EXPLICIT CURSOR</h3>
+<p>
+  Explicit cursors are declared explicitly by the user, along with other identifiers to be used in a pl/sql block. These are also 
+  known as user defined cursors, defined in the declare section of the pl/sql block. They must be declared when you are executing 
+  a select statement that returns more than one row. Even though the cursor stores multiple recordes, only one record can be processed at a time,
+  which is called as current row.
+</p>
+<h3>EXPLICIT CURSOR ATTRIBUTES</h3>
+<p>Oracle provides few attributes for explicit cursor called as explicit cursor attributes to check the status of DML operation.
+    <br>These attributes are:
+    <ol>
+        <li>%FOUND</li>
+        <li>%NOTFOUND</li>
+        <li>ROWCOUNT</li>
+        <li>%ISOPEN</li>
+    </ol>
+</p>
+<h3>1. %FOUND</h3>
+<p>True, if fetch statement returns at least one row.
+    <br>False, if fetch statement doesn't return a row.
+    <b>Example:</b>
+    <br>cursor_name%FOUND
+</p>
+<h3>2. %NOTFOUND</h3>
+<p>False, if fetch statement returns at least one row.
+    <br>True, if fetch statement doesn't return a row.
+    <b>Example:</b>
+    <br>cursor_name%NOTFOUND
+</p>
+
+<h3>3. %ROWCOUNT</h3>
+<p>Return the number of rows fetched by the fetch statement. If no row is returned, the pl/sql statement returns an error.
+    <b>Example:</b>
+    <br>cursor_name%ROWCOUNT
+</p>
+
+<h3>4. %ISOPEN</h3>
+<p>True, if the cursor is already open in the program. False, if the cursor is not opened in the program.
+    <b>Example:</b>
+    <br>cursor_name%ISOPEN
+</p>
+<h3>Cursor manipulation</h3>
+<p>Cursor manipulation is done through the declare, open, fetch and close statements. This statements are explained below:
+ <p><b>Declaring an Explicit cursor</b> <br>
+ While declaring a cursor, cursor name is given and also defines the structure of the query to be performed within it. The Cursor statement 
+   is used to declare explicit cursor.
+   <b>Syntax : </b> <br>
+   <p class="back">CURSOR < cursor_name> IS < select statement>;
+   </p>
+</p>
+<br>
+<p><b>Opening an Explicit cursor</b> <br>
+   Once the cursor is declared in the declaration section, we can access the cursor in the execution section of the pl/sql program.
+   The open statement is used to open an explicit cursor.
+   <br> After opening the cursor, the rows returned by the query are available for fetching. When a cursor is opened, the first row becomes 
+   the  current row i.e. the cursor points to the first row in the active set. 
+   <b>Syntax: </b> <br>
+      <p class="back"> OPEN cursor_name;
+      </p>
+   </p>
+<br>
+<p><b>Fetching data from the Explicit cursor</b> <br>
+   After the cursor is opened, the current row is loaded into variables. The current row is the row at which the cursor is currently 
+   pointing. The transfer of data into pl/sql variablesis done through fetch statement.
+   <b>Syntax:</b> <br>
+      <p class="back">FETCH cursor_name into variable;
+      </p>
+   </p>
+   <br>
+   <p><b>Closing an Explicit cursor</b> <br>
+    Close the cursor after completing the processing of the select statement. This step allows the cursor to be reopened, if required. 
+    Therefore, you can establish an active set several times. The close statement is used to close an explicit cursor.
+    <b>Syntax:</b> <br>
+       <p class="back">CLOSE cursor_name;
+       </p>
+    </p>
+
+    <h3>Example: Using cursor display the rollno, name, fees of all those students from student table.</h3>
+    <img src="../../mysqlimages/pl11.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

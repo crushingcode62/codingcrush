@@ -1,0 +1,168 @@
+<html>
+<head>
+    <title>Program 59</title>
+    <link rel="stylesheet" href="../css files/all.css">
+    <style>
+        body{
+            margin:20px;
+            font-size: 20px;
+            background: linear-gradient(to right, rgb(255, 255, 193),skyblue);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav{
+            display:flex;
+        }
+        .top{
+            
+            padding:20px;
+        }
+        .nav .next{
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+        img{
+            border-radius: 60%;
+            width: 170px;
+            height:150px;
+            align-items:center;
+        }   
+        h2{
+            color:blue;
+        }
+        .skills p{
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            color:darkblue;
+        }
+        .progress{
+            background-color: rgb(184, 173, 173);
+            width: 600px;
+            height: 10px;
+            border-radius: 5px;
+        }
+        .progress div{
+            height: 10px;
+            border-radius: 5px;
+            width: 50%;
+            background-color: blue;
+        
+        }
+        .progress .html{
+            width: 90%;         
+        }
+        .progress .css{
+            width: 85%;         
+        }
+        .progress .javascript{
+            width: 60%;         
+        }
+        .progress .mso{
+            width: 95%;         
+        }
+        hr{
+            width:70%;
+            justify-items: left;
+            height: 3px;
+            background-color:rgb(164, 164, 255)
+            
+        }
+
+            </style>
+</head>
+<body>
+    <div class="head">
+        <div class="nav">
+        <div class="top">
+        <h2>Profile</h2>
+        <br>
+        <img src="../images/bg1.jpg">
+        <h2>Reena Choudhary</h2>
+        <p>Software Engineer</p>
+    </div>
+        <div class="next">
+            <h2>Contact :</h2>
+            <p><i class="fa fa-phone"> + 91 666666666</i></p>
+            <p><i class="fa fa-envelope"> abc@gmail.com</i></p>
+            <p><i class="fas fa-map-marker-alt"> Vikas Nagar, New Delhi</i></p>
+        </div>
+        </div>
+        
+        <hr>
+        <div class="skills">
+            <h2>My Skills</h2>
+            <p>HTML</p>
+            <div class="progress">
+                <div class="html"></div>
+            </div>
+            <br>
+            <p>CSS</p>
+            <div class="progress">
+                <div class="css"></div>
+            </div>
+            <br>
+            <p>JAVASCRIPT</p>
+            <div class="progress">
+                <div class="javascript"></div>
+            </div>
+            <br>
+            <p>Microsoft Office</p>
+            <div class="progress">
+                <div class="mso"></div>
+            </div>
+            <br>
+        </div>
+        <hr>
+        <div class="next">
+            <h2>Education</h2>
+            <div class="p">
+                <h3>School Name</h3>
+                <p> Passing Year: 2017 <br>
+                     fd ddis ssin rsdin ddsidd dd a   wqqqqqq eeeee oy f rdds fdrbu rsdxzas.</p>
+            </div>
+            <div class="p">
+                <h3>College Name</h3>
+                <p>Passing Year: 2020 <br>
+                 fd ddis ssin rsdin ddsidd dd a   wqqqqqq eeeee oy f rdds fdrbu rsdxzas.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="next">
+            <h2>Experience</h2>
+            <div class="p">
+                <h3>Company One</h3>
+                <p> Position One<br>
+                     fd ddis ssin rsdin ddsidd dd a   wqqqqqq eeeee oy f rdds fdrbu rsdxzas.</p>
+            </div>
+            <hr>
+            <div class="p">
+                <h3>Company Two</h3>
+                <p>Position Two <br>
+                 fd ddis ssin rsdin ddsidd dd a   wqqqqqq eeeee oy f rdds fdrbu rsdxzas.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="next">
+            <h2>Awards & Certificates</h2>
+            <ul>
+                <li>Certificate of Computer course</li>
+                <li> Certificate of complition</li>
+                <li>Employee of the month</li>      
+            </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="next">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Dancing</li>
+                <li>writing</li>
+                <li>Singing</li>
+            </ul>
+        </div>
+     
+    </div>
+    
+</body>
+</html>

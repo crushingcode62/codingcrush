@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        .front, form{
+            background-color: black;
+            color: white;
+            font-size: 30px;
+        }
+        .h2{
+            background-color: black;
+            color: rgb(126, 255, 242);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        .h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p, form{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 class="h2">WELCOME TO CODING CRUSH</h2>
+    <h3 class="h3">HTML FORM</h3>
+<p>
+    An HTML form is a section of a document which contains controls such as text fields,
+    password fields, checkboxes, radio buttons, submit button, menus etc.
+    An HTML form facilitates the user to enter data that is to be sent to the server 
+    for processing such as name, email address, password, phone number, etc.
+</p>
+<p>
+    <h3 class="h3">Syntax</h3>
+    <p>< form action="" method="get|post">  
+      //input controls e.g. textfield, textarea, radiobutton, button  
+    < /form>   </p>
+<h3 class="h3">Example: </h3>
+<p class="back">
+    < form>  
+        Enter Name:   
+        < input type="text" id="name" name="name"><br>
+        Enter Password:    
+        < input type="Password" id="pass" name="pass"><br>  
+        < input type="submit" value="submit">  
+    < /form>  
+<p class="front">Output: <br>
+    <form>  
+    Enter Name:   
+    <input type="text" id="name" name="name"><br>
+    Enter Password:    
+    <input type="Password" id="pass" name="pass"><br>  
+    <input type="submit" value="submit">  
+    </form>   
+</p>
+<h3 class="h3">HTML Form tag list :</h3><p>
+        < form>	It defines an HTML form to enter inputs by the used side. <br>
+        < input>	It defines an input control. <br>
+        < textarea>	It defines a multi-line input control. <br>
+        < label>	It defines a label for an input element. <br>
+        < fieldset> 	It groups the related element in a form. <br>
+        < select>	It defines a drop-down list. <br> 
+        < option>	It defines an option in a drop-down list. <br>
+        < button>	It defines a clickable button. <br>
+</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<body>
+    <h2>Sum of the two given integers if the two values are same, then returns triple their sum.</h2>
+    Enter first integer: <input type="text" name="" id="num1"><br><br>
+    Enter second integer: <input type="text" name="" id="num2"><br><br>
+    <input type="button" value="Sum" onclick="sum()"><br><br>
+    <div id="res"> </div>
+</body>
+<head>
+    <title>Program 6</title>
+    <script>
+        
+        function sum(){
+            var x=parseInt(document.getElementById("num1").value);
+            var y=parseInt(document.getElementById("num2").value);
+
+            if(x==y){
+                var a= 3* (x+y);
+                document.getElementById("res").innerHTML=("sum of two integer : "+ a);
+            }
+            else{
+                var b;
+                b= (x+y);
+                document.getElementById("res").innerHTML=("sum of two integer : "+ b);
+            }
+        }
+       
+    </script>
+</head>
+</html>

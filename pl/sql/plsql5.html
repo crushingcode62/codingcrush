@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ol li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>Conditional Control</h3>
+<p>
+    The structure of the pl/sql if statement is similar to the structure of if statements in other languages. It allows pl/sql 
+    to perform actions selectively based on conditions.
+    There are three forms of if statements:
+    <ol>
+        <li>If then statement</li>
+        <li>If-else then statement</li>
+        <li>Elseif then statement</li>
+    </ol>
+</p>
+<br>
+<h3>1.If Then Statement</h3>
+<p>The if then statement either runs or skips a sequence of one or more statements, depending on a condition.</p>
+<h3>Syntax:</h3>
+<p class="back">IF condition THEN 
+    <br> statements
+    <br>END IF;
+   </p>
+   <br>
+   <h3>Example: Find the biggest number between two numbers using IF THEN statement.</h3>
+<img src="../../mysqlimages/pl5a.png" height="600" width="800" border="2">
+ <br>
+   <h3>2.If Then Else Statement</h3>
+   <p>In if then else statement, if the value of condition is true, the statements run; otherwise, the else statement run.</p>
+   <h3>Syntax:</h3>
+   <p class="back">IF condition THEN 
+       <br> statements
+       <br>ELSE 
+       <br>else_statements
+       <br>END IF;
+      </p>
+      <br>
+      <h3>Example: Write a procedure to check the x is eligible for vote or not using IF THEN ELSE statement.</h3>
+      <img src="../../mysqlimages/pl5b.png" height="600" width="800" border="2">
+<br>
+      <h3>3. If Then Elsif Statement</h3>
+<p>The if then elsif statement runs the first statements for which condition is true. Remaining conditions are not evaluated. 
+    If no condition is true , the else_statements run, if they exist; otherwise, the if then elsif statement does nothing.
+</p>
+<h3>Syntax:</h3>
+<p class="back">IF condition1 THEN 
+    <br> statements1
+    <br>ELSIF condition2 THEN 
+    <br>statement2
+    <br>ELSIF condition3 THEN
+    <br>statement3
+    <br>[ELSE 
+    <br>else_statements]
+    <br>END IF;
+   </p>
+   <br>
+   <h3>Example:Find the biggest number between three numbers using IF THEN ELSIF statement.</h3>
+   <img src="../../mysqlimages/pl5c.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+       
+</body>
+</html>

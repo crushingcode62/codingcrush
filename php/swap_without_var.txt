@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <form method="post">
+            <center>
+                <h1> 
+                    <u>SWAP TO NUMBERS WITHOUT VARIABLE</u></h1>
+            </center><br>
+            <table bgcolor="crimson" align="center"><tr><td><br>
+            <input type="text" value="Enter First Number:" readonly><input type="number" name="n1"></tr></td>
+            <tr><td><br>
+            <input type="text" value="Enter Second Number:" readonly><input type="number" name="n2"></tr></td><tr><td><br><br><center><br><br>
+        <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td></table>
+        </form>
+
+        <?php
+             if($_POST)
+             {
+                 $a=$_POST['n1'];
+                 $b=$_POST['n2'];
+                 echo "<center>";
+                 echo "1st number before swapping :", $a, "<br>";
+                 echo "2nd number before swapping :", $b, "<br><br>";
+
+                 $a= $a+$b;
+                 $b= $a-$b;
+                 $a= $a-$b;
+
+                 echo "1st number after swapping :", $a, "<br>";
+                 echo "2nd number after swapping :", $b, "<br>";
+                 echo "</center>";
+             }
+        
+        ?>
+    </body>
+</html>

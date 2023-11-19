@@ -1,0 +1,25 @@
+<html>
+    
+    <head>
+        <title>Program 1</title>
+        <body>
+            <h1>CONVERT CELCIUS TO FAHRENHEIT</h1>
+            Enter the temperature in celsius :
+            <input type="text" name="" id="y"> C <br><br>
+            <input type="button" value="Convert" onclick="convert()"><br><br>
+            <div id="res"></div>
+        
+            </body>
+    <script>
+        function convert()
+        {
+            var c= document.getElementById("y").value;
+            var f= (c* 1.8)+32;
+            document.getElementById("res").innerHTML= 'Temperature in Faherneheit : '+(f)+ ' F';         
+        }
+    
+    </script>
+</head>
+
+
+</html>

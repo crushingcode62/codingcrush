@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            outline-color:red;
+        }
+        p.p1{
+            outline-style: dotted;
+        }
+        p.p2{
+            outline-style: dashed;
+        }
+        p.p3{
+            outline-style: solid;
+        }
+        p.p4{
+            outline-style: double;
+        }
+        p.p5{
+            outline-style: groove;
+        }
+        p.p6{
+            outline-style: ridge;
+        }
+        p.p7{
+            outline-style: inset;
+        }
+        p.p8{
+            outline-style: outset;
+        }
+    
+    </style>
+</head>
+<body>
+    <h2>The outline-style Property</h2>
+    <p class="p1">A dotted outline</p>
+    <p class="p2">A dashed outline</p>
+    <p class="p3">A solid outline</p>
+    <p class="p4">A double outline</p>
+    <p class="p5">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="p6">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="p7">A inset outline. The effect depends on the outline-color value.</p>
+    <p class="p8">A outset outline. The effect depends on the outline-color value.</p>
+</body>
+</html>

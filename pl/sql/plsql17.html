@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>EXCEPTION HANDLING</h3>
+<p>
+ In PL/SQL, a warning or error condition is called an Exception, which arises during program execution. Run-time errors or 
+ Exceptions arises from design fault, coding mistakes, hardware failures, and many other sources. When an error occurs, an exception 
+ is raised, i.e. the normal execution stops and the control transfers to the exception handling part of the PL/SQL block. <br>
+ Exceptions are identifiers in PL/SQL, which may be raised during the execution of a block to terminate its main body of actions. 
+ A block will always terminate when an exception is raised, but you may specify an 'Exception Handler' to perform final actions before 
+ the block terminates.
+</p>
+<h3>Advantages of Exception Handling :</h3>
+<ul>
+    <li>Without exception handling, every time a command is issued, a check must be made for execution errors. With exception handling 
+        errors are handled conveniently without the need to code multiple checks.   </li>
+    <li>Exception Handling improves readability by isolating error handling routines.</li>
+    <li>Exception handling improves reliability. One need not worry about checking for an error at every point it might occur. If 
+        a PL/SQL block contains an exception handler, and if an exception is ever raised in that block, the exception handler will 
+        handle the exception.
+    </li>
+</ul>
+<h3>Types of Exception </h3>
+<p>1. Inbuild Exception</p>
+<p>(i) Named exception</p>
+<p>(ii)Unnamed exception</p>
+<p>2. Explicit (User defined) Exception</p>
+<h3>Structure :</h3>
+<img src="../../mysqlimages/pl17.png" height="600" width="800" border="2">
+<h3>Syntax :</h3>
+<p class="back">WHEN exception-identifier THEN actions;</p>
+<br><br>
+<br><br>
+<br>
+      
+</body>
+</html>

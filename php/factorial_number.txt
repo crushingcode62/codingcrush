@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <form method="post">
+            <center>
+                <h1> 
+                    <u>FACTORIAL OF A NUMBER</u></h1>
+            </center><br>
+            <table bgcolor="crimson" align="center"><tr><td><br>
+            <input type="text" value="Enter a Number:" readonly><input type="text" name="n"></tr></td><tr><td><br><br><center><br><br>
+            <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td></table>
+        </form>
+
+    <?php
+        if($_POST)
+        {
+            $num= $_POST['n'];
+            function getfact($n)
+               {
+                    if (!is_numeric($n)){
+                        echo "string is not allowed. Enter any number";
+                    return;
+                    }
+                    if($n<=1){
+                    return 1;
+                    }
+                    else{
+                        return $n* getfact($n-1);
+                    }
+               }
+            $factorial = getfact($num);
+            echo "<center>Factorial of $num is : ", $factorial,"</center>";
+                 
+        }
+    ?>
+    </body>
+</html>

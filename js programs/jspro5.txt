@@ -1,0 +1,11 @@
+<html>
+<body>
+    <h2>Write a JavaScript program to get the website URL (loading page). </h2>
+</body>
+<head>
+    <title>Program 5</title>
+    <script>
+        document.write(document.URL);
+    </script>
+</head>
+</html>

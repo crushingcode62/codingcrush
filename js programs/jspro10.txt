@@ -1,0 +1,24 @@
+<html>
+<body>
+    
+</body>
+<head>
+    <title>Program 10</title>
+    <script>
+        var a, b, c;
+        a= prompt("Enter the 1st number :");
+        b= prompt("Enter the 2ndt number :");
+        c= prompt("Enter the 3rd number :");
+        if(a>b && a>c){
+            document.write("1st number is greater");
+        }
+        else if(b>c && b>a){
+            document.write("2nd number is greater");
+        }
+        else{
+          document.write("3rd number is greater");
+        }
+    
+    </script>
+</head>
+</html>

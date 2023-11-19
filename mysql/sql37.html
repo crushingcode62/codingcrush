@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>SPECIAL OPERATORS IN SUBQUERIES </h3>
+<p>
+   In SQL, there are some special opearators used in Subqueries to perform specific tasks.These operators are :
+   <ul>
+    <li>Exists</li>
+    <li>Any</li>
+    <li>All</li>
+   </ul>
+</p>
+<br>
+<h3>Exists</h3>
+<p>This operator is used to check for the existence of values. It  produces a boolean result(true/false). It takes a subquery as an argument 
+    and evaluates it to true if the subquery produces any output and false, if the subquery does not produce any output.
+</p>
+<h3>List the employee from emp_list table if and only if more than 2 employees are present in department no. 102</h3>
+<br>
+<img src="../mysqlimages/my38.png">
+<br>
+<h3>Any</h3>
+<p> The any operator compares the lowest value from the set.
+</p>
+<h3>List the employee names from emp_list table, whose salary is greater than the lowest salary of an employee belonging to department no. 101 and 102</h3>
+<br>
+<img src="../mysqlimages/my38a.png" >
+<br>
+<h3>All</h3>
+<p> The All operator compares the highest value from the set.
+</p>
+<h3>List the employee names from emp_list table, whose salary is greater than the highest salary of an employee belonging to department no. 101</h3>
+<br>
+<img src="../mysqlimages/my38b.png" >
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

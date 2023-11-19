@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ol li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>IMPLICIT CURSOR</h3>
+<p>
+  Implicit cursors are declared by pl/sql implicity when DML statements like, Insert, Update and  Delete statements are executed. 
+  They are also declared when a select statement that returns just one rw is executed.
+  <br> When the executable part of a pl/sql block issues a SQL statement, pl/sql creates an implicit cursor, which pl/sql manages automatically.
+</p>
+<br>
+<h3>IMPLICIT CURSOR ATTRIBUTES</h3>
+<p>Oracle provides few attributes for implicit cursor called as implicit cursor attributes to check the status of DML operation.
+    <br>These attributes are:
+    <ol>
+        <li>%FOUND</li>
+        <li>%NOTFOUND</li>
+        <li>ROWCOUNT</li>
+        <li>%ISOPEN</li>
+    </ol>
+</p>
+<h3>1. %FOUND</h3>
+<p>The return value is True, if the DML statements like Insert, Delete, and Update affect at least one row and if select... into statement 
+    return at least one row.
+    <br>The return value is False, if the DML statements like Insert, Delete, and Update do not affect any row and if select... into statement 
+    does not return at a row.
+    <b>Example:</b>
+    <br>SQL%FOUND
+</p>
+<br>
+<h3>2. %NOTFOUND</h3>
+<p>The return value is False, if the DML statements like Insert, Delete, and Update affect at least one row and if select... into statement 
+    return at least one row.
+    <br>The return value is True, if the DML statements like Insert, Delete, and Update do not affect any row and if select... into statement 
+    does not return at a row.
+    <b>Example:</b>
+    <br>SQL%NOTFOUND
+</p>
+<br>
+<h3>3. %ROWCOUNT</h3>
+<p>Return the number of rows affected by the DML operations Insert, Delete, Update or single row select.
+    <b>Example:</b>
+    <br>SQL%ROWCOUNT
+</p>
+<br>
+<h3>4. %ISOPEN</h3>
+<p>The return value is always False because oracle automatically closes an implicit cursor after exxecuting its SQL statement.
+    <b>Example:</b>
+    <br>SQL%ISOPEN
+</p>
+<h3>Example: Consider the PL/SQL block that uses implicit cursor attributes as shown below:</h3>
+<img src="../../mysqlimages/pl10a.png" height="600" width="800" border="2">
+<h3>After applying implicit cursor attributes the output is: </h3>
+<img src="../../mysqlimages/pl10b.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

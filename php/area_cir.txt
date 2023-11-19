@@ -1,0 +1,38 @@
+
+<html>
+    <body>
+        <form method="post">
+            <center>
+                <h1> 
+                    <u>AREA OF A CIRCLE</u>
+                </h1>
+            </center><br>
+        <table bgcolor="crimson" align="center">
+        <tr><td><br>
+        <input type="text" value="Enter the Radius:" readonly><input type="number" name="n"></tr></td>
+        <tr><td><br><br>
+        <center><br><br>
+        <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td>
+        </table>
+        </form>
+
+        <?php
+        if($_POST)
+        {
+            $str=$_POST['n'];
+            
+            function cir_ar($r)
+            {
+                return(3.141*$r*$r);
+            }
+            $ar = cir_ar($str);
+            echo "<center>Area of Circle is $ar</center>";
+           
+        }
+        
+        ?>
+    </body>
+</html>
+
+
+

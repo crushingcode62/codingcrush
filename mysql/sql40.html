@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h4{
+            font-size: 25px;
+        }
+        p{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 25px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+    <h3>DATE FUNCTIONS</h3>
+<p>
+    Oracle databse stores dates in an internal numeric format, representing the century, year, month, day, hours, minutes 
+    and seconds. The default date display fromat is DD-MON-RR.
+
+</p>
+<br>
+<h4>(i) SYSDATE</h4>
+<P>SYSDATE is a pseudo-column that returns the system's current date and time of types DATE. SYSDATE returns the date and time of the 
+    local databse.
+</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT SYSDATE from dual ;</p>
+<br>
+<h4>(ii)DATE_ADD(d,n)</h4>
+<P>This function adds days to or from a date. It returns a date as result.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT SYSDATE, DATE_ADD(d,n) from dual ;</p>
+<br>
+<h4>(iii) DATEDIFF(d1,d2)</h4>
+<P>This function  returns the number of months between two dates, d1 and d2.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT DATEDIFF(d1,d2) from dual ;</p>
+<br>
+<h4>(iv) DATE_SUB(m,n)</h4>
+<P>This function substract days to or from a date. It returns a date as result.</P>
+
+<h4>Syntax :</h4>
+<p class="back"> SELECT DATE_SUB(m,n) from dual ;</p>
+
+<br>
+<h4>(v) DATE_FORMAT(d, format)</h4>
+<P>This function is used to change the date format.</P>
+<h4>Syntax :</h4>
+<p class="back"> SELECT DATE_FORMAT(d,format) from dual ;</p>
+<h4>Example: </h4>
+<img src="../mysqlimages/my40a.png">
+<img src="../mysqlimages/my40b.png">
+<br>
+<br><br>
+<br><br>
+<br>
+ 
+
+
+       
+</body>
+</html>

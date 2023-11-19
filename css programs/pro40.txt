@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program 40</title>
+    <style type="text/css">
+        *{
+            margin: 10px;
+            padding: 0;
+        }
+        .div1{
+            height: 400px;
+            width:400px;
+            background:tomato;
+        }
+        .div1:hover{
+            height: 200px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div1"></div>
+</body>
+</html>

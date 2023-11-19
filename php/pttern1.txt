@@ -1,0 +1,28 @@
+<html>
+<body>
+<h1><u>Pattern :</u></h1>
+    <?php
+        $n=5;
+        for($i=1;$i<=$n;$i++)
+        {
+            $a=$i;
+            $b=2*$i-2;
+            for($j=1;$j<=2*($n-$i);$j++)
+            {
+                echo "&nbsp;";
+            }
+            for($k=1;$k<=$i;$k++)
+            {
+                 echo "*";
+                 $a+=1;
+            }
+            for($h=1;$h<$i;$h++)
+            {
+                 echo "*";
+                 $b--;
+            }
+            echo "<br>";
+        }
+    ?>
+</body>
+<html>

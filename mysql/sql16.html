@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>Group by clause</h3>
+<p>
+    In SQL, The Group By statement is used for organizing similar data into groups. 
+    The data is further organized with the help of equivalent function. It means, if different rows in a
+     precise column have the same values, it will arrange those rows in a group. <br>
+The SELECT statement is used with the GROUP BY clause in the SQL query. <br>
+WHERE clause is placed before the GROUP BY clause in SQL. <br>
+ORDER BY clause is placed after the GROUP BY clause in SQL. <br>
+The GROUP BY Clause is used to group the rows, which have the same values. <br>
+The SELECT statement in SQL is used with the GROUP BY clause. <br>
+In the Group BY clause, the SELECT statement can use constants, aggregate functions, expressions, and column names. <br>
+The group by clause cannot use without group functions.It is necessary to use the group functions with group by clause.
+But the group functions are individually used.
+<br> There are mainly five group/ Aggregate functions:
+<br>
+<ul>
+    <li>Min()</li>
+    <li>Max()</li>
+    <li>Sum()</li>
+    <li>Avg()</li>
+    <li>Count()</li>
+</ul> 
+
+</p>    
+<h3>Syntax :</h3>
+<p class="back"> SELECT column1, function_name(column2)  
+   <br> FROM table_name  
+    <br> [WHERE condition] 
+    <br> [GROUP BY column1, column2]
+   <br> [ORDER BY column1, column2];
+   </p>
+   <h3>If you want to know the total amount of salary spent on each department, the query would be like:</h3>
+<h3>Output: </h3>
+<img src="../mysqlimages/my16.png">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

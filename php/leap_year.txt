@@ -1,0 +1,51 @@
+
+<html>
+    <body>
+        <form method="post">
+            <center>
+                <h1> 
+                    <u>Check whether given year is leap year or not.
+                </u></h1>
+            </center><br>
+            <table bgcolor="crimson" align="center"><tr><td><br>
+            <input type="text" value="Enter the Year:" readonly><input type="number" name="n"></tr></td><tr><td><br><br><center><br><br>
+            <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td>
+            </table>
+        </form>
+
+        <?php
+             if($_POST)
+             {
+                $yr= $_POST['n'];
+           
+                function leap($y)
+                {
+                    if(!is_numeric($y)){
+                   echo "String is not allowed. Enter valid  year.";
+                }
+   
+                if(($y%4==0 && $y%100!=0) || $y%400==0)
+                {
+                    echo "<center>",$y, " is a Leap year.</center>";
+                }
+               else
+               {
+                    echo "<center>",$y, " is not a Leap year.</center>"; 
+                }
+                } 
+                leap($yr);
+            }  
+        
+        ?>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

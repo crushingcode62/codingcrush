@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: red; 
+            display: inline-block;
+            width:200px;
+            height: 200px;
+            margin:6px;
+            margin-left: 35%;
+
+        }
+        .div2{
+            background-color: darkviolet;
+            display: inline-block;
+            width:200px;
+            height: 200px; 
+            margin: 6px;
+        }
+        .div3{
+            background-color: pink;
+            display: inline-block; 
+            width:200px;
+            height: 200px;
+            margin: 6px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>

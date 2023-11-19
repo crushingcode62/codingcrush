@@ -1,0 +1,31 @@
+
+<html>
+    <body>
+        <form method="post">
+            <center>
+                <h1> 
+                    <u>REVERSE OF A NUMBER</u></h1>
+            </center><br>
+            <table bgcolor="crimson" align="center"><tr><td><br>
+            <input type="text" value="Enter a Number:" readonly><input type="number" name="n"></tr></td><tr><td><br><br><center><br><br>
+            <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td></table>
+        </form>
+
+        <?php
+        if($_POST)
+        {
+            $num= $_POST['n'];
+            $temp=$num;
+            $rnum=0;
+            while($num>1)
+                       {
+                         $rem= $num%10;
+                         $rnum= ($rnum*10)+$rem;
+                         $num=($num/10);
+                       }
+            echo "<center>Reverse number of $temp is $rnum.</center>";
+        }
+        
+        ?>
+    </body>
+</html>

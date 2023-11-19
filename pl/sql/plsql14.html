@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        Ol li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>PROCEDURES & FUNCTIONS</h3>
+<p>
+  <b>PROCEDURES :</b>
+  A procedure or stored procedure is a named PL/SQL block that can accept parameters (sometimes referred to as arguments), and be invoked. Generally speaking, a procedure is mainly used to perform one or more specific task.
+   A procedure has a header, a declaration section, an executable section, and an optional exception-handling section.
+  A procedure can be compiled and stored in the database as a schema object. Procedures promote reusability and maintainability. When validated, they can be used in any number of applications.
+ If the requirements change, only the procedure needs to be updated. <br>
+ We can create a new procedure with the CREATE PROCEDURE statement, which may declare a list of parameters and must define the actions to be performed by the standard PL/SQL block. The CREATE clause 
+ enables you to create stand-alone procedures, which are stored in an Oracle database.
+</p>
+<br>
+<h3>Syntax:</h3>
+<p class="back">CREATE [OR REPLACE] PROCEDURE procedure_name
+    <br>[parameter [mode] datatype,....] 
+    <br> IS/AS 
+    <br> BEGIN
+    <br>    pl/sql executable statements ;
+    <br> END [procedure_name]
+   <br><b>CALLING A PROCEDURE</b> <br>
+      procedure_name (parameters); </p>
+   <br>
+<h3>TYPES OF PROCEDURE</h3>
+<OL>
+    <LI>Unnamed</LI>
+    <li>Named</li>
+    <li>Stored</li>
+</OL>
+<h3>MODES OF PARAMETERS:</h3>
+<ol>
+    <li>IN</li>
+    <li>OUT </li>
+    <li>IN OUT</li>
+</ol>
+<h3>IN PARAMETER :</h3>
+<P>The IN parameter can be referenced by the procedure or function. The value of the parameter cannot be overwritten by the 
+    procedure  or the function.
+</P>
+<h3>Example: </h3>
+<img src="../../mysqlimages/pl14c.png" height="600" width="800" border="2">
+<h3>OUT PARAMETER :</h3>
+<p>The OUT parameter cannot be referenced by the procedure or function, but the value of the parameter can be overwritten by 
+    the procedure or function.
+</p>
+<h3>Example: </h3>
+<img src="../../mysqlimages/pl14d.png" height="600" width="800" border="2">
+
+<h3>INOUT PARAMETER :</h3>
+<p>The INOUT parameter can be referenced by the procedure or function and the value of the parameter can be overwritten by 
+    the procedure or function.
+</p>
+<h3>Example: </h3>
+<img src="../../mysqlimages/pl14e.png" height="600" width="800" border="2">
+<h3>DROPPING A PROCEDURE</h3>
+<p>To drop  a procedure, DROP PROCEDURE statement is used.</p>
+<h3>Syntax:</h3>
+<p class="back"> DROP PROCEDURE procedure_name;</p>
+<h3>Example:Show the code to create a procedure. </h3>
+<img src="../../mysqlimages/pl14a.png" height="600" width="800" border="2">
+<h3>Calling a procedure. </h3>
+<img src="../../mysqlimages/pl14b.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

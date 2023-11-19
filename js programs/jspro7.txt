@@ -1,0 +1,30 @@
+<html>
+<body>
+    <h2>Given positive number is a multiple of 3 or a multiple of 7.</h2>
+    <input type="text" name="" id="num1"><br><br>
+    <input type="button" value="Check" onclick="multi()">
+</body>
+<head>
+    <title>Program 7</title>
+    <script>
+        function multi(){
+            var a=parseInt( document.getElementById("num1").value);
+
+            if(a>0)
+            {
+           if(a%3 ==0 || a%7 ==0)
+            {
+                alert(true);
+            }
+            else {
+                alert(false);
+            }
+        }
+        else
+        {
+            alert("The number is negative.Please enter the positive number.");
+        }
+        }
+    </script>
+</head>
+</html>

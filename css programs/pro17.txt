@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program 17</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .header{
+            text-align: center;
+            padding: 20px;
+            color:rgb(216, 50, 50);
+            background-color: rgba(253, 193, 202, 0.828);
+        }
+        h2{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+</body>
+</html>

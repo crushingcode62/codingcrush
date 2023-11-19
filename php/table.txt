@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <form method="post">
+            <center>
+                <h1> 
+                    <u>TABLE OF A NUMBER</u></h1>
+            </center><br>
+            <table bgcolor="crimson" align="center"><tr><td><br>
+            <input type="text" value="Enter a Number:" readonly><input type="number" name="n"></tr></td><tr><td><br><br><center><br><br>
+            <input type="submit" value= "&nbsp;&nbsp;SUBMIT &nbsp;&nbsp;"><br><br><br></center></tr></td></table>
+        </form>
+
+        <?php
+            if($_POST)
+            {
+                $num=$_POST['n'];
+                echo "<center>";
+                echo "Table of $num: <br>";
+
+                for($i=1;$i<=10;$i++)
+                {
+                   echo $num.'*'.$i.'='.($num*$i)."<br>";
+                }
+                echo "</center>";
+            }
+        
+        ?>
+    </body>
+</html>

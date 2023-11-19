@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ol li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>FUNCTIONS</h3>
+<p>
+    The PL/SQL Function is very similar to PL/SQL Procedure. The main difference between procedure and a function is, a 
+    function must always return a value, and on the other hand a procedure 
+    may or may not return a value. Except this, all the other things of PL/SQL procedure are true for PL/SQL function too.
+    <br>
+    RETURN clause specifies that data type you are going to return from the function. Function_body contains the executable part.
+    The AS keyword is used instead of the IS keyword for creating a standalone function.
+</p>
+<h3>Syntax:</h3>
+<p class="back">CREATE [OR REPLACE] FUNCTION function_name [parameters]  
+   <br> [(parameter_name [modes] datatype [, ...])]  
+   <br> RETURN return_datatype  
+    <br> IS / AS 
+     <br>BEGIN  
+      <br> function_body statements;   
+    <br> END [function_name];  
+    <br><b>Calling a Function</b>
+    <br>function_name(parameters..);
+   </p>
+   <br>
+   <h3>TYPES OF FUNCTION</h3>
+<OL>
+    <li>Named</li>
+    <li>Stored</li>
+</OL>
+<h3>MODES OF PARAMETERS:</h3>
+<ol>
+    <li>IN</li>
+    <li>OUT </li>
+    <li>IN OUT</li>
+</ol>
+<h3>IN PARAMETER :</h3>
+<P>The IN parameter can be referenced by the procedure or function. The value of the parameter cannot be overwritten by the 
+    procedure  or the function.
+</P>
+<h3>Example: </h3>
+<img src="../../mysqlimages/pl15a.png" height="600" width="800" border="2">
+
+<h3>OUT PARAMETER :</h3>
+<p>The OUT parameter cannot be referenced by the procedure or function, but the value of the parameter can be overwritten by 
+    the procedure or function.
+</p>
+<h3>Example: </h3>
+<img src="../../mysqlimages/pl15b.png" height="600" width="800" border="2">
+
+<h3>INOUT PARAMETER :</h3>
+<p>The INOUT parameter can be referenced by the procedure or function and the value of the parameter can be overwritten by 
+    the procedure or function.
+</p>
+<h3>Example: </h3>
+<img src="../../mysqlimages/pl15c.png" height="600" width="800" border="2">
+
+<h3>DROPPING A FUNCTION</h3>
+<p>To drop  a FUNCTION, DROP FUNCTION statement is used.</p>
+<h3>Syntax:</h3>
+<p class="back"> DROP FUNCTION  function_name;</p>
+
+<h3>Example: </h3>
+<img src="../../mysqlimages/pl15d.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

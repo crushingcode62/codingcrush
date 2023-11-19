@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program 54</title>
+    <link rel="stylesheet" href="../css files/all.css">
+    <style>
+        body{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            height:120px;
+            width: 120px;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .d1{
+            text-align: center;
+            padding-top: 20px;
+            margin: 40px 60px;
+        }
+        p{
+            justify-content: center;
+        }
+        span{
+            font-size: 30px;
+        }
+        .d2{
+            color:gold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="photo">
+            <img src="../images/girl.jpg" >
+        </div>
+        <p>Lorem ipsum dolor sit amet consectectur, adipisicing elit.
+            Praesentium dicta perspiciatis in! Nihil iste labore commodi?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p><br>
+        <p><span> Amanda Sharma</span><br> <br>Vice President of Sloopy</p><br>
+        <div class="d2">
+        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+        </div>
+    </div>
+</body>
+</html>

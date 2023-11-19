@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>CURSOR WITH PARAMETERS</h3>
+<p>
+ Parameters allow values to be passed to  a cursor when it is opend, and used within the query when it executes. Using parameters 
+ explicit cursor may be opened more than once in a block, returning a different active set each time.
+ <br>Each formal parameter in the cursor declaration must have a corresponding actual parameter in the open statement. Parameter datatypes are 
+ the same as those for scalar variables, but you do not give them sizes. The parameters are treated like pl/sql variables within 
+ the cursor's query expression.
+</p>
+<h3>Syntax:</h3>
+<p class="back">
+    CURSOR cursor_name 
+    <br> [parameter_name datatype]
+    <br>IS 
+    <br>select statement;
+   <br> <b>While opening the cursor, parameters values are passed.</b>
+   <br> OPEN cursor_name(parameter_value....);
+   </p>
+   <br>
+   <h3>Example: The following code illustrates the use of cursor with parameters.</h3>
+   <img src="../../mysqlimages/pl13.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

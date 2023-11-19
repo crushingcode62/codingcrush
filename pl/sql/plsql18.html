@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+    table{
+        margin: 10px;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>NAMED EXCEPTIONS</h3>
+<p>
+    The exceptions which are already given names by PL/SQL are declared in the STANDARD package in PL/SQL.
+     You do not have to declare them in your own programs.
+      SQLCODE is a PL/SQL built-in function that returns the status code of the last-executed statement. SQLCODE returns 
+      zero if the last statement executed without errors. <br>
+    PL/SQL provides many pre-defined exceptions, which are executed when any database rule is violated by a program.
+     For example, the predefined exception NO_DATA_FOUND is raised when a SELECT INTO statement returns no rows.
+</p>
+<h3>Syntax:</h3>
+<p class="back">DECLARE  
+   <br> < declarations section>  
+  <br> BEGIN  
+  <br>  < executable command(s)>  
+  <br> EXCEPTION  
+   <br> < exception handling goes here >  
+  <br>  WHEN exception1 THEN   
+    <br>    exception1-handling-statements   
+   <br> WHEN exception2  THEN   
+     <br>  exception2-handling-statements   
+    <br> WHEN exception3 THEN   
+     <br>  exception3-handling-statements  
+   <br> ........  
+   <br> WHEN others THEN  
+    <br>   exception-handling-statements  
+ <br> END;  
+   </p>
+   <br>
+   <H3>Some of the named exceptions are :</H3>
+   <center>
+    <table width="1000" border="1">
+    <tr><th width="300"><font size=6>Exception Name </font></th>
+    <th width="300"><font size=6> Oracle Error</font></th>
+    <th width="300"><font size=6> Error Description</font></th></tr>
+    <tr>
+         <td ><font size=5>NO_DATA_FOUND</font></td>
+    <td><font size=5>ORA-01403</font></td>
+    <td><font size=5>It is raised when a select into statement returns no rows. <br></font></td>
+</tr>
+    <tr>
+     <td><font size=5> VALUE_ERROR </font></td>
+     <td><font size=5>ORA-06502</font></td>
+     <td><font size=5>It is raised when an arithmetic, conversion, truncation, or size-constraint error occurs. <br>
+    </font></td>
+    </tr>
+    <tr>
+        <td><font size=5>ZERO_DIVIDE</font></td>
+       <td><font size=5>ORA-01476 </font></td>
+       <td><font size=5>It is raised when an attempt is made to divide a number by zero. <br>    </font></td>
+       </tr>
+       <tr>
+        <td><font size=5>TOO_MANY_ROWS </font></td>
+       <td><font size=5>ORA-01422</font></td>
+       <td><font size=5>It is raised when a SELECT INTO statement returns more than one row. <br>   </font></td>
+       </tr>
+       <tr>
+        <td><font size=5>ROWTYPE_MISMATCH </font></td>
+       <td><font size=5>ORA-06504 </font></td>
+       <td><font size=5>It is raised when a cursor fetches value in a variable having incompatible data type. <br> </font></td>
+       </tr>
+       <tr>
+        <td><font size=5>DUP_VAL_ON_INDEX </font></td>
+       <td><font size=5>ORA-00001</font></td>
+       <td><font size=5>It is raised when duplicate values are attempted to be stored in a column with unique index. <br></font></td>
+       </tr>
+    </table>
+    </center>
+</table>
+<h3>The following example explain the usage of Named exceptions.  </h3>
+<img src="../../mysqlimages/pl18a.png" height="600" width="800" border="2">
+<img src="../../mysqlimages/pl18b.png" height="600" width="800" border="2">
+<br><br>
+<br><br>
+<br>
+
+
+
+       
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>UNNAMED EXCEPTIONS</h3>
+<p>
+    Oracle doesn’t provide name for some system exceptions called unnamed system 
+    exceptions.These exceptions don’t occur frequently.These exceptions have two parts code and an associated message.
+    When we want to handle the unnamed exception then first we will declare exception type variable with the exception.
+</p>
+<h3>Syntax:</h3>
+<p class="back">Declare 
+    <br>exp_var exception; 
+    <br>(Now, link this variable with the exception SQL code by using the following :)
+    <br>pragma exception_init (exp_var, -code);
+    <br> BEGIN 
+    <br>executable_statement;
+   <br> EXCEPTION
+   <br>  WHEN exp_var THEN
+    <br> exception-handling-statements;
+    <br> END;
+   </p>
+   <br>
+
+<h3>The following example explain the usage of Unnamed exceptions. </h3>
+<img src="../../mysqlimages/pl19.png" height="600" width="800" border="2">
+
+<br><br>
+<br><br>
+<br>
+      
+</body>
+</html>

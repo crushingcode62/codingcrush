@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 40px;
+        }
+        .back{
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        h2{
+            background-color: black;
+            color: rgb(149, 229, 255);
+            font-size: 60px;
+            font-family:fantasy;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        ul li{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .a1{
+        background-color:rgb(3, 113, 102);
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px;
+        border-radius: 15px;
+        color:rgb(141, 244, 234);
+        margin:50px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 5px gray;
+        display: inline;
+
+    }
+    #a2{
+        margin-left:65%;
+    }
+        
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO CODING CRUSH</h2>
+   <h3>DATABASE TRIGGERS</h3>
+<p>
+    Trigger is a procedure which is automatically called when we do DML Operations(INSERT, DELETE, UPDATE) on particular table. <br>
+    Trigger is invoked by Oracle engine automatically whenever a specified event occurs.Trigger is stored into database
+     and invoked repeatedly, when specific condition match. Triggers are stored programs, which are automatically executed
+      or fired when some event occurs.
+</p>
+<h3>Advantages of Triggers</h3>
+<ul>
+    <li>Trigger generates some derived column values automatically </li>
+    <li> Enforces referential integrity </li>
+    <li>Event logging and storing information on table access </li>
+    <li> Auditing </li>
+     <li>Synchronous replication of tables </li>
+    <li>Imposing security authorizations </li>
+     <li>Preventing invalid transactions</li>
+</ul>
+<h3>PARTS OF TRIGGER</h3>
+<P>Whenever a trigger is created, it contains the following three sequential parts: <br>
+    1. Triggering Event or Statement: The statements due to which a trigger occurs is called triggering event or statement.
+     Such statements can be DDL statements, DML statements or any database operation, executing which gives rise to a trigger. <br>
+    2.Trigger Restriction: The condition or any limitation applied on the trigger is called trigger restriction. Thus, if
+     such a condition is TRUE then trigger occurs otherwise it does not occur. <br>
+    3. Trigger Action: The body containing the executable statements that is to be executed when trigger occurs that is
+     with the execution of Triggering statement and upon evaluation of Trigger restriction as True is called Trigger Action.</P>
+
+<h3>Diagram :</h3>
+<img src="../../mysqlimages/pl22.png" height="600" width="800" border="2">
+
+<h3>Syntax of CREATING TRIGGER :</h3>
+<p class="back">CREATE [OR REPLACE] TRIGGER trigger_name 
+    <br>BEFORE | AFTER
+    <br>INSERT [OR]| UPDATE [OR]| DELETE [of column_name] 
+    <br>ON table_name 
+    <br>FOR EACH ROW[when condition]
+    <br> BEGIN 
+    <br>pl/sql block;
+    <br>END;
+   </p>
+   <br>
+
+<h3>The following example explain the usage of Trigger. </h3>
+<img src="../../mysqlimages/pl21a.png" height="600" width="800" border="2">
+
+<br><br>
+<br><br>
+<br>
+      
+</body>
+</html>
